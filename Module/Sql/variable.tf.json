@@ -1,0 +1,63 @@
+{
+    "variable" : {
+    "resource_group_name": {
+        "default":"c809nt6yssss"
+    },
+    "resource_group_location": {
+        "default":"eastus"
+    },
+    "tags":{
+        "type":"map",
+        "default":{"application" : "application", "unit" :"BI" }
+    },
+    "sql_server_name":{
+        "default":"bissv"
+    },
+    "sql_database_name":{
+        "default":"biadbi"
+    },
+    "sql_admin_login":{
+        "default":"biadmin"
+    },
+    "sql_admin_password":{
+        "default":"user@123"
+    },
+    "azuread_login_name":{
+        "default":"AD group name"
+    },
+    "azuread_objectid":{
+        "default":"Azure AD group object Id"
+    },
+    "firewallrule_number":{
+        "type": "number",
+        "default":3
+    },
+    "firewall_name":{
+        "type":"list(string)",
+        "default":["firewall1","firewall2","allow"]
+    },
+    "start_ip_address":{
+        "type":"list(string)",
+        "default":["165.225.240.0","193.96.98.0","0.0.0.0"]
+    },
+    "end_ip_address":{
+        "type":"list(string)",
+        "default":["165.225.240.255","193.96.98.225","0.0.0.0"]
+    },
+    "sql_version":{
+        "default":"12.0"
+    },
+    "sql_collation":{
+        "default":"SQL_Latin1_General_CP1_CI_AS"
+    },
+    "sqldb_license_type":{
+        "default":"LicenseIncluded"
+    },
+    "sqldb_max_size_gb":{
+        "default":"250"
+    },
+    "sqldb_skuname":{
+        "default":"S0"
+    }
+    }
+}

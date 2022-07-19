@@ -1,0 +1,99 @@
+{
+    "variable" : {
+    "resource_group_name": {
+        "default":"c809nt6yssss"
+    },
+    "resource_group_location": {
+        "default":"eastus"
+    },
+    "tags":{
+        "type":"map",
+        "default":{"application" : "application", "unit" :"BI" }
+    },
+    "app_service_plan_name":{
+        "default":"ASP"
+    },
+    "app_service_name":{
+        "default":"webapp"
+    },
+    "app_plan_kind":{
+        "default":"Linux"
+    },
+    "app_plan_reserverd":{
+        "type":"bool",
+        "default":true
+    },
+    "app_plan_sku_tier":{
+        "default":"Basic"
+    },
+    "app_plan_sku_size":{
+        "default":"B1"
+    },
+    "http2_enabled":{
+        "type":"bool",
+        "default":true
+    },
+    "linux_fx_version":{
+        "default":"DOTNETCORE|5.0"
+    },
+    "app_command_line":{
+        "default":"dotnet webapp.Web.dll"
+    },
+    "Settings_enabled": {
+        "type":"bool",
+        "default":true
+    },
+    "Autoscalename":{
+        "default":"AutoscaleSetting"
+    },
+    "https_only":{
+        "type":"bool",
+        "default":true
+    },
+    "min_tls_version":{
+        "default":"1.2"
+    },
+    "Autoscale_profile_name":{
+        "default":"Scaling"
+    },
+    "Capacity_default":{
+        "default": 1
+    },
+    "Capacity_minimum":{
+        "default": 1
+    },
+    "Capacity_maximum":{
+        "default": 2
+    },
+    "time_grain_scaleup":{
+        "default": "PT1M"
+    },
+    "time_window_scaleup":{
+        "default": "PT10M"
+    },
+    "threshold_scaleup":{
+        "default": 90
+    },
+    "scaleup_action_value":{
+        "default": 1
+    },
+    "scaleup_cooldown":{
+        "default": "PT1M"
+    },
+    "time_grain_scaledown":{
+        "default": "PT1M"
+    },
+    "time_window_scaledown":{
+        "default": "PT10M"
+    },
+    "threshold_scaledown":{
+        "default": 10
+    },
+    "scaledown_action_value":{
+        "default": 1
+    },
+    "scaledown_cooldown":{
+        "default": "PT1M"
+    }
+}
+}

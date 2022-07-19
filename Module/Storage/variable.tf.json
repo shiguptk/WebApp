@@ -1,0 +1,34 @@
+{
+    "variable" : {
+    "resource_group_name": {
+        "default":"c809nt6yssss"
+    },
+    "resource_group_location": {
+        "default":"eastus"
+    },
+    "storage_account": {
+        "default":"bistr"
+    },
+    "tags":{
+        "type":"map",
+        "default":{"application" : "application", "unit" :"BI" }
+    },
+    "account_tier":{
+        "default":"standard"
+    },
+    "account_replication_type":{
+        "default":"RAGRS"
+    },
+    "number_of_containers":{
+        "type":"number",
+        "default":5
+    },
+    "storage_container":{
+        "type":"list(string)",
+        "default":["error","standardized","receive","uploaded","applog"]
+    },
+    "container_type":{
+        "default":"private"
+    }
+    }
+}
